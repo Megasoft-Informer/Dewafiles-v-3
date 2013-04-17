@@ -1,0 +1,17 @@
+# DO NOT REMOVE THIS LINE AND THE LINES BELOW ERRORPAGEID:anutun
+ErrorDocument 404 /404.php
+ErrorDocument 403 /403.php
+# DO NOT REMOVE THIS LINE AND THE LINES ABOVE anutun:ERRORPAGEID
+# Do not remove this line or mod_rewrite rules and search engine friendly URLs will stop working
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule download-(.*).htm$ downloads.php?name=$1
+RewriteRule get-(.*).htm$ downloads2.php?id=$1
+RewriteRule u-(.*).htm$ info.php?nama=$1
+RewriteRule home$ home.php
+RewriteRule upload$ upload.php
+RewriteRule myfiles$ myfiles.php
+RewriteRule allfiles$ allfiles.php
+RewriteRule allusers$ allusers.php
+RewriteRule account$ account.php
+RewriteRule register$ register.php
